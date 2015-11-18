@@ -77,7 +77,7 @@ var Container = React.createClass({
                     <CodeContainer changeTree={this.onTreeChange}/>
                 </div>
                 <div className="col-lg-6">
-                    <TreeView data={this.state.content}/>
+                    <TreeView highlightSelected={false} data={this.state.content}/>
                 </div>
             </div>
         )

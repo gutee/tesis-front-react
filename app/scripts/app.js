@@ -72,12 +72,16 @@ var Container = React.createClass({
     },
     render: function(){
         return (
-            <div id="content" className="row marketing">
-                <div className="col-lg-6">
-                    <CodeContainer changeTree={this.onTreeChange}/>
+            <div>
+                <div id="content" className="row marketing">
+                    <div className="col-lg-12">
+                        <CodeContainer changeTree={this.onTreeChange}/>
+                    </div>
                 </div>
-                <div className="col-lg-6">
-                    <TreeView highlightSelected={false} data={this.state.content}/>
+                <div id="content" className="row marketing">
+                    <div className="col-lg-12">
+                        <TreeView highlightSelected={false} data={this.state.content}/>
+                    </div>
                 </div>
             </div>
         )
